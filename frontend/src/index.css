@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-neon: #ccff00;
+  --color-purply: #110c29;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+  /* background-color: #e2e1e67a; */
+}
