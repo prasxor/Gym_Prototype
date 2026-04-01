@@ -4,8 +4,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md px-4 py-3">
-      <div className="flex items-center justify-between">
+    <nav className="fixed top-0 left-0 w-full border border-b-gray-300 z-50 backdrop-blur-md bg-white/30 h-16 ">
+      <div className="max-w-7xl mx-auto px-4 w-full h-full flex items-center justify-between">
         {/* Logo */}
         <h1 className="text-lg font-bold">My App</h1>
 
@@ -18,7 +18,7 @@ export default function Navbar() {
           <li className="relative group">
             <span className="cursor-pointer">Blocks ▾</span>
 
-            <ul className="absolute left-0 top-6 hidden group-hover:block bg-white shadow-lg rounded p-2 w-40">
+            <ul className="absolute left-0 top-8 opacity-0 group-hover:opacity-100 transition bg-white shadow-lg rounded p-2 w-40">
               <li className="p-2 hover:bg-gray-100">Hero</li>
               <li className="p-2 hover:bg-gray-100">Features</li>
               <li className="p-2 hover:bg-gray-100">Testimonials</li>
