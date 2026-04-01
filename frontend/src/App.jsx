@@ -1,23 +1,26 @@
-import { useState } from "react";
+
 import Navbar  from "./components/Navbar";
 import "./App.css";
+import Footer from "./pages/Footer";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="backgroundContainer">
-      {/* <Router> */}
+      <Router>
       <div className="navbarMainApp">
         {/* <Navbar /> */}
        <Navbar/>
       </div>
-      {/* <Routes> */}
-      {/* <Route path="/" element={<Home />} /> */}
+      <Routes>
+      <Route path="/" element={<Home />} />
       {/* <Route path="/news" element={<News />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/contact" element={<ContactUs />} /> */}
         </Routes>
         <Footer />
-      </Router> */}
+      </Router>
     </div>
   );
 }
