@@ -82,6 +82,14 @@ const Home = () => {
           {/* <PricingCards/> */}
         </div>
       </div>
+      <div className="h-[70vh] w-full border border-amber-400">
+         <HeadingSection
+          title={"Train With Experts"}
+          para={
+            "Certified trainers to guide, motivate, and push you towards real results."
+          }
+        />
+      </div>
     </section>
   );
 };
