@@ -1,3 +1,4 @@
+# Prasxor's frontend project ignore rules: logs, dependencies, build files, and editor settings
 # Logs
 logs
 *.log

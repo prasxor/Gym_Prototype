@@ -7,6 +7,7 @@ import yoga from "../assets/workout-stretching1.svg";
 import HeadingSection from "../components/Atoms/headingSection/HeadingSection";
 import "./Home.css";
 import PricingCards from "../components/Atoms/PricingCards/PricingCards";
+import TrainerCard from "../components/TrainerCard";
 
 const Home = () => {
   const basicFeatures = [
@@ -76,19 +77,49 @@ const Home = () => {
           }
         />
         <div className="flex flex-row items-center justify-center gap-15 w-full h-[70%]">
-                     <PricingCards price={"999"} planName={"Basic Plan"} features={basicFeatures} />
-            <PricingCards price={"1,999"} planName={"Standard Plan"} features={standardFeatures} />
-            <PricingCards price={"3,499"} planName={"Premium Plan"} features={premiumFeatures} />
+          <PricingCards
+            price={"999"}
+            planName={"Basic Plan"}
+            features={basicFeatures}
+          />
+          <PricingCards
+            price={"1,999"}
+            planName={"Standard Plan"}
+            features={standardFeatures}
+          />
+          <PricingCards
+            price={"3,499"}
+            planName={"Premium Plan"}
+            features={premiumFeatures}
+          />
           {/* <PricingCards/> */}
         </div>
       </div>
-      <div className="h-[70vh] w-full border border-amber-400">
-         <HeadingSection
+      <div className="h-[70vh] bg-white text-black w-full border ">
+        <div className="custom-shape-divider-top-1775137333">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              className="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <HeadingSection
           title={"Train With Experts"}
           para={
             "Certified trainers to guide, motivate, and push you towards real results."
           }
         />
+        <div className=" w-full h-[70%] flex items-center justify-center gap-15">
+          <TrainerCard img={"https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"} name={"Asso Myron"} job={"Gym Coach"}/>
+          <TrainerCard img={"https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"} name={"Asso Myron"} job={"Gym Coach"}/>
+          <TrainerCard img={"https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"} name={"Asso Myron"} job={"Gym Coach"}/>
+        </div>
       </div>
     </section>
   );
