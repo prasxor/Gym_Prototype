@@ -13,31 +13,9 @@
     display: block;
     width: calc(131% + 1.3px);
     height: 77px;
-    transform: rotateY(90deg);
+    transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-1775038508 .shape-fill {
     fill: #FFFFFF;
-}
-
-
-.custom-shape-divider-top-1775137333 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1775137333 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1775137333 .shape-fill {
-    fill: #000000;
 }
