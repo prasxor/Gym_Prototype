@@ -9,6 +9,7 @@ import "./Home.css";
 import PricingCards from "../components/Atoms/PricingCards/PricingCards";
 import TrainerCard from "../components/TrainerCard";
 import FeatureCardUpdated from "../components/Atoms/FeatureCardUpdated";
+import { MasonryGridGallery } from "../components/MasonryGridGallery";
 
 const Home = () => {
   const basicFeatures = [
@@ -63,12 +64,15 @@ const Home = () => {
             "Choose the right program based on your goals — strength, weight loss, or overall fitness."
           }
         />
-        <div className="flex flex-row items-center justify-evenly border border-amber-400 h-[70%] w-full gap-7">
+        <div className="flex flex-row items-center justify-center border border-amber-400 h-[70%] w-full gap-20">
           {/* <FeatureCard img={bodyBuilding} heading={"Weight Training"} />
           <FeatureCard img={personalTraining} heading={"Personal Training"} />
           <FeatureCard img={cardio} heading={"Cardio / HIIT"} />
           <FeatureCard img={yoga} heading={"Yoga / Zumba"} /> */}
           <FeatureCardUpdated />
+          <FeatureCardUpdated />
+          <FeatureCardUpdated />
+          {/* <FeatureCardUpdated /> */}
         </div>
       </div>
       <div className="h-[70vh] w-full border border-amber-400">
@@ -109,6 +113,8 @@ const Home = () => {
           <TrainerCard img={"https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"} name={"Asso Myron"} job={"Gym Coach"}/>
           <TrainerCard img={"https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"} name={"Asso Myron"} job={"Gym Coach"}/>
         </div>
+        
+          <MasonryGridGallery/>
       </div>
     </section>
   );
