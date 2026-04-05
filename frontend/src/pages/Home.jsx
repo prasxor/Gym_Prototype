@@ -10,6 +10,8 @@ import PricingCards from "../components/Atoms/PricingCards/PricingCards";
 import TrainerCard from "../components/TrainerCard";
 import FeatureCardUpdated from "../components/Atoms/FeatureCardUpdated";
 import { MasonryGridGallery } from "../components/MasonryGridGallery";
+import Footer from "./Footer";
+import Testimonials from "../components/Atoms/Testimonials";
 
 const Home = () => {
   const basicFeatures = [
@@ -35,7 +37,7 @@ const Home = () => {
   ];
 
   return (
-    <section className="bg-white h-auto w-full flex items-center justify-center flex-col">
+    <section className="bg-white min-h-screen w-full flex flex-col">
       <div className="relative h-screen w-full flex items-center justify-center">
         <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/17211446/pexels-photo-17211446.jpeg')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-black/50"></div>
@@ -109,13 +111,44 @@ const Home = () => {
           }
         />
         <div className=" w-full h-[70%] flex items-center justify-center gap-15">
-          <TrainerCard img={"https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"} name={"Asso Myron"} job={"Gym Coach"}/>
-          <TrainerCard img={"https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"} name={"Asso Myron"} job={"Gym Coach"}/>
-          <TrainerCard img={"https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"} name={"Asso Myron"} job={"Gym Coach"}/>
+          <TrainerCard
+            img={
+              "https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"
+            }
+            name={"Asso Myron"}
+            job={"Gym Coach"}
+          />
+          <TrainerCard
+            img={
+              "https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"
+            }
+            name={"Asso Myron"}
+            job={"Gym Coach"}
+          />
+          <TrainerCard
+            img={
+              "https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"
+            }
+            name={"Asso Myron"}
+            job={"Gym Coach"}
+          />
         </div>
-        
-          <MasonryGridGallery/>
       </div>
+      <div className="flex flex-col h-auto my-20 gap-10 justify-center items-center">
+        <HeadingSection
+          title={"Inside Our Gym"}
+          para={"Explore our equipment, space, and real workout environment."}
+        />
+        <MasonryGridGallery />
+      </div>
+      <div className="flex w-full flex-col h-auto items-center justify-center">
+        <HeadingSection
+          title={"Real Results, Real Stories"}
+          para={"See how our members transformed their fitness journey with us."}
+        />
+        <Testimonials />
+      </div>
+      <Footer />
     </section>
   );
 };

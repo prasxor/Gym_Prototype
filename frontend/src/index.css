@@ -10,3 +10,13 @@
   font-family: "DM Sans", sans-serif;
   /* background-color: #e2e1e67a; */
 }
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4f46e5;
+}

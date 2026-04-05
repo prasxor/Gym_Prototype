@@ -1,6 +1,6 @@
 export function MasonryGridGallery() {
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-4 w-[70%] h-full">
       <div className="grid gap-4">
         <div>
           <img
