@@ -144,9 +144,49 @@ const Home = () => {
       <div className="flex w-full flex-col h-auto items-center justify-center">
         <HeadingSection
           title={"Real Results, Real Stories"}
-          para={"See how our members transformed their fitness journey with us."}
+          para={
+            "See how our members transformed their fitness journey with us."
+          }
         />
         <Testimonials />
+      </div>
+      <div className="flex w-full flex-col h-200 items-center justify-center gap-10">
+        <HeadingSection
+          title={"Visit Us Anytime"}
+          para={
+            "Convenient timings and easy location access for your daily workouts."
+          }
+        />
+        <section className="py-20 w-[80%] h-150">
+          <div className="w-full h-full border border-red-500 mx-auto flex flex-row justify-between gap-10">
+            {/* Left */}
+            <div className="bg-white p-8 flex justify-center flex-col rounded-xl shadow">
+              
+
+              <div className="mt-6 space-y-2">
+                <p>Mon - Sat: 5:00 AM – 10:00 PM</p>
+                <p>Sunday: 6:00 AM – 2:00 PM</p>
+              </div>
+
+              <div className="mt-6">
+                <p>
+                  Plot No.722, Road No.36, Pemmasani Complex - 3rd Floor, Near
+                  Madhapur Police Station,Jubilee Hills, Hyderabad Hyderabad,
+                  Telangana
+                </p>
+                <p className="">+918977712481</p>
+              </div>
+            </div>
+
+            {/* Right */}
+            <div className="w-full h-full rounded-xl overflow-hidden">
+              <iframe
+                src="https://maps.google.com/maps?q=hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                className="w-full h-full"
+              />
+            </div>
+          </div>
+        </section>
       </div>
       <Footer />
     </section>
