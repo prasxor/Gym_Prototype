@@ -41,9 +41,12 @@ const Home = () => {
       <div className="relative h-screen w-full flex items-center justify-center">
         <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/17211446/pexels-photo-17211446.jpeg')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-black/50"></div>
-        <h1 className="relative z-10 text-7xl text-white font-bold">
-          Hero section
+        <div className="flex flex-col justify-center items-center gap-5">
+          <h1 className="relative z-10 text-6xl text-white font-bold">
+          Transform Your Body, Transform Your Life.
         </h1>
+        <p className="relative z-10 text-2xl text-gray-300 font-medium">Discipline over motivation. Systems over excuses. Results over everything.</p>
+        </div>
         <div className="custom-shape-divider-bottom-1775038508">
           <svg
             data-name="Layer 1"
@@ -71,9 +74,9 @@ const Home = () => {
           <FeatureCard img={personalTraining} heading={"Personal Training"} />
           <FeatureCard img={cardio} heading={"Cardio / HIIT"} />
           <FeatureCard img={yoga} heading={"Yoga / Zumba"} /> */}
-          <FeatureCardUpdated />
-          <FeatureCardUpdated />
-          <FeatureCardUpdated />
+          <FeatureCardUpdated img={yoga} title={"Yoga / Zumba"} para={"Improve flexibility, burn calories, and relieve stress through rhythmic, energizing sessions. Build balance, enhance mobility, and enjoy fun."}/>
+          <FeatureCardUpdated img={cardio} title={"Cardio / HIIT"} para={"Increase endurance, improve heart health, and push your limits with structured, time-efficient training sessions regularly."}/>
+          <FeatureCardUpdated img={bodyBuilding} title={"Personal Training"} para={"Focus on strength, technique, and consistency with one-on-one coaching tailored to your specific fitness goals."}/>
           {/* <FeatureCardUpdated /> */}
         </div>
       </div>
@@ -89,16 +92,19 @@ const Home = () => {
             price={"999"}
             planName={"Basic Plan"}
             features={basicFeatures}
+            styles={"bg-gray-700 hover:bg-gray-800"}
           />
           <PricingCards
             price={"1,999"}
             planName={"Standard Plan"}
             features={standardFeatures}
+            styles={"bg-green-500 hover:bg-green-600"}
           />
           <PricingCards
             price={"3,499"}
             planName={"Premium Plan"}
             features={premiumFeatures}
+            styles={"bg-yellow-500 hover:bg-yellow-600"}
           />
           {/* <PricingCards/> */}
         </div>
@@ -171,7 +177,7 @@ const Home = () => {
               <div className="mt-6">
                 <p>
                   Plot No.722, Road No.36, Pemmasani Complex - 3rd Floor, Near
-                  Madhapur Police Station,Jubilee Hills, Hyderabad Hyderabad,
+                  Madhapur Police Station, Jubilee Hills, Hyderabad Hyderabad,
                   Telangana
                 </p>
                 <p className="">+918977712481</p>
