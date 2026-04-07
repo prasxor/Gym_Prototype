@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="backgroundContainer min-h-screen flex flex-col">
       <Router>
-        <div className="navbarMainApp">
+        <div className="navbarMainApp flex justify-center items-center">
           {/* <Navbar /> */}
           <Navbar />
         </div>

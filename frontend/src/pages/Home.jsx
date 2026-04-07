@@ -37,17 +37,17 @@ const Home = () => {
   ];
 
   return (
-    <section className="bg-white min-h-screen w-full flex flex-col">
+    <section id="HomePage" className="bg-white min-h-screen w-full flex flex-col">
       <div className="relative h-screen w-full flex items-center justify-center">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="flex flex-col justify-center items-center gap-5">
-          <h1 className="relative z-10 text-6xl text-white font-bold">
+        <div  className="flex flex-col justify-center items-center gap-5">
+          <h1  className="relative z-10 text-6xl text-white font-bold">
           Transform Your Body, Transform Your Life.
         </h1>
-        <p className="relative z-10 text-2xl text-gray-300 font-medium">Discipline over motivation. Systems over excuses. Results over everything.</p>
+        <p id="featuresSection" className="relative z-10 text-2xl text-gray-300 font-medium">Discipline over motivation. Systems over excuses. Results over everything.</p>
         </div>
-        <div className="custom-shape-divider-bottom-1775038508">
+        <div  className="custom-shape-divider-bottom-1775038508">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -62,22 +62,23 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="h-[50vh] w-full flex flex-col justify-center items-center">
+      <div  className="h-[50vh] w-full flex flex-col justify-center items-center">
         <HeadingSection
           title={"Transform Your Body"}
           para={
             "Choose the right program based on your goals — strength, weight loss, or overall fitness."
           }
         />
-        <div className="flex flex-row items-center justify-center border border-amber-400 h-[70%] w-full gap-20">
+        <div  className="flex flex-row items-center justify-center border border-amber-400 h-[70%] w-full gap-20">
           {/* <FeatureCard img={bodyBuilding} heading={"Weight Training"} />
           <FeatureCard img={personalTraining} heading={"Personal Training"} />
           <FeatureCard img={cardio} heading={"Cardio / HIIT"} />
           <FeatureCard img={yoga} heading={"Yoga / Zumba"} /> */}
           <FeatureCardUpdated img={yoga} title={"Yoga / Zumba"} para={"Improve flexibility, burn calories, and relieve stress through rhythmic, energizing sessions. Build balance, enhance mobility, and enjoy fun."}/>
           <FeatureCardUpdated img={cardio} title={"Cardio / HIIT"} para={"Increase endurance, improve heart health, and push your limits with structured, time-efficient training sessions regularly."}/>
-          <FeatureCardUpdated img={bodyBuilding} title={"Personal Training"} para={"Focus on strength, technique, and consistency with one-on-one coaching tailored to your specific fitness goals."}/>
+          <FeatureCardUpdated  img={bodyBuilding} title={"Personal Training"} para={"Focus on strength, technique, and consistency with one-on-one coaching tailored to your specific fitness goals."}/>
           {/* <FeatureCardUpdated /> */}
+          <span id="PricingSection"></span>
         </div>
       </div>
       <div className="h-[70vh] w-full border border-amber-400">
@@ -106,10 +107,11 @@ const Home = () => {
             features={premiumFeatures}
             styles={"bg-yellow-500 hover:bg-yellow-600"}
           />
+          <span id="TrainerSection"></span>
           {/* <PricingCards/> */}
         </div>
       </div>
-      <div className="h-[70vh] bg-white text-black w-full border ">
+      <div  className="h-[70vh] bg-white text-black w-full border ">
         <HeadingSection
           title={"Train With Experts"}
           para={
@@ -142,31 +144,34 @@ const Home = () => {
             imgPosition={"object-cover object-center h-full object-top"}
           />
         </div>
+        <span id="gallery"></span>
       </div>
-      <div className="flex flex-col h-auto my-20 gap-10 justify-center items-center">
+      <div   className="flex flex-col h-auto my-20 gap-10 justify-center items-center">
         <HeadingSection
           title={"Inside Our Gym"}
           para={"Explore our equipment, space, and real workout environment."}
         />
         <MasonryGridGallery />
+        <span id="testimonialsSection"></span>
       </div>
-      <div className="flex w-full flex-col h-auto items-center justify-center">
-        <HeadingSection
+      <div   className="flex w-full flex-col h-auto items-center justify-center">
+        <HeadingSection 
           title={"Real Results, Real Stories"}
           para={
             "See how our members transformed their fitness journey with us."
           }
         />
         <Testimonials />
+      <span id="LocationSection"></span>
       </div>
-      <div className="flex w-full flex-col h-200 items-center justify-center gap-10">
+      <div className="flex w-full flex-col h-200 items-center justify-center gap-5">
         <HeadingSection
           title={"Visit Us Anytime"}
           para={
             "Convenient timings and easy location access for your daily workouts."
           }
         />
-        <section className="py-20 w-[80%] h-150">
+        <section  className="py-20 w-[80%] h-150">
           <div className="w-full h-full border border-red-500 mx-auto flex flex-row justify-between gap-10">
             {/* Left */}
             <div className="bg-white p-8 flex justify-center flex-col rounded-xl shadow">

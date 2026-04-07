@@ -4,44 +4,61 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full  border-b-gray-800 z-50 backdrop-blur-md bg-white/30 h-16 ">
+    <nav className="fixed top-5 rounded-4xl px-5 border w-2/3 z-50 border-gray-400 backdrop-blur-md bg-white/30 h-16 ">
       <div className="max-w-7xl mx-auto px-4 w-full h-full flex items-center justify-between">
         {/* Logo */}
         <h1 className="text-lg font-bold">BeastMode Fitness</h1>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 font-medium">
-          <li className="cursor-pointer hover:text-blue-500">Pages</li>
-          <li className="cursor-pointer hover:text-blue-500">Account</li>
+          <a href="#HomePage">
+            <li className="cursor-pointer hover:text-blue-500">Home</li>
+          </a>
+          <a href="#featuresSection">
+            <li className="cursor-pointer hover:text-blue-500">Features</li>
+          </a>
+          <a href="#PricingSection">
+            <li className="cursor-pointer hover:text-blue-500">Pricing</li>
+          </a>
+          <a href="#LocationSection">
+            <li className="cursor-pointer hover:text-blue-500">Location</li>
+          </a>
+          {/* <li className="cursor-pointer hover:text-blue-500">Account</li> */}
 
           {/* Dropdown */}
           <li className="relative group">
-            <span className="cursor-pointer">Blocks ▾</span>
+            <span className="cursor-pointer">More ▾</span>
 
-            <ul className="absolute left-0 top-8 opacity-0 group-hover:opacity-100 transition bg-white shadow-lg rounded p-2 w-40">
-              <li className="p-2 hover:bg-gray-100">Hero</li>
-              <li className="p-2 hover:bg-gray-100">Features</li>
-              <li className="p-2 hover:bg-gray-100">Testimonials</li>
-              <li className="p-2 hover:bg-gray-100">Ecommerce</li>
+            <ul className="absolute left-0 top-8 opacity-0 group-hover:opacity-100 transition shadow-lg rounded-3xl p-2 w-40 backdrop-blur-md bg-white/30">
+              {/* <li className="p-2 hover:bg-gray-100">Trainers</li> */}
+              <a href="#TrainerSection">
+                <li className="p-2 cursor-pointer hover:text-blue-500">
+                  Trainers
+                </li>
+              </a>
+              <a href="#gallery">
+                <li className="p-2 cursor-pointer hover:text-blue-500">
+                  Gallery
+                </li>
+              </a>
+              <a href="#testimonialsSection">
+                <li className="p-2 cursor-pointer hover:text-blue-500">
+                  Testimonials
+                </li>
+              </a>
             </ul>
           </li>
-
-          <li className="cursor-pointer hover:text-blue-500">Docs</li>
         </ul>
 
         {/* Buttons */}
         <div className="hidden md:flex gap-2">
-          <button className="px-3 py-1 bg-blue-500 text-white rounded">
+          <button className="px-4 py-1 bg-blue-500 text-white rounded-3xl">
             Get Started
           </button>
-          <button className="px-3 py-1 border rounded">Log In</button>
         </div>
 
         {/* Mobile Toggle */}
-        <button
-          className="md:hidden text-xl"
-          onClick={() => setOpen(!open)}
-        >
+        <button className="md:hidden text-xl" onClick={() => setOpen(!open)}>
           {open ? "✕" : "☰"}
         </button>
       </div>
@@ -58,9 +75,7 @@ export default function Navbar() {
             <button className="w-full bg-blue-500 text-white py-1 rounded">
               Get Started
             </button>
-            <button className="w-full border py-1 rounded">
-              Log In
-            </button>
+            <button className="w-full border py-1 rounded">Log In</button>
           </div>
         </div>
       )}

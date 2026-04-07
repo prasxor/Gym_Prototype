@@ -6,6 +6,11 @@
   --color-purply: #110c29;
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-initial-target: nearest;
+}
+
 * {
   font-family: "DM Sans", sans-serif;
   /* background-color: #e2e1e67a; */
