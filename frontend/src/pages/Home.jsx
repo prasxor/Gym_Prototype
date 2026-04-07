@@ -1,7 +1,5 @@
 import React from "react";
-import FeatureCard from "../components/Atoms/FeatureCard/FeatureCard";
 import bodyBuilding from "../assets/body-part-muscle.svg";
-import personalTraining from "../assets/wellness.svg";
 import cardio from "../assets/workout-stretching.svg";
 import yoga from "../assets/workout-stretching1.svg";
 import HeadingSection from "../components/Atoms/headingSection/HeadingSection";
@@ -69,7 +67,7 @@ const Home = () => {
             "Choose the right program based on your goals — strength, weight loss, or overall fitness."
           }
         />
-        <div  className="flex flex-row items-center justify-center border border-amber-400 h-[70%] w-full gap-20">
+        <div  className="flex flex-row items-center justify-center h-[70%] w-full gap-20">
           {/* <FeatureCard img={bodyBuilding} heading={"Weight Training"} />
           <FeatureCard img={personalTraining} heading={"Personal Training"} />
           <FeatureCard img={cardio} heading={"Cardio / HIIT"} />
@@ -81,7 +79,7 @@ const Home = () => {
           <span id="PricingSection"></span>
         </div>
       </div>
-      <div className="h-[70vh] w-full border border-amber-400">
+      <div className="h-[70vh] w-full">
         <HeadingSection
           title={"Flexible Membership Plans"}
           para={
@@ -111,7 +109,7 @@ const Home = () => {
           {/* <PricingCards/> */}
         </div>
       </div>
-      <div  className="h-[70vh] bg-white text-black w-full border ">
+      <div  className="h-[70vh] bg-white text-black w-full ">
         <HeadingSection
           title={"Train With Experts"}
           para={
@@ -172,7 +170,7 @@ const Home = () => {
           }
         />
         <section  className="py-20 w-[80%] h-150">
-          <div className="w-full h-full border border-red-500 mx-auto flex flex-row justify-between gap-10">
+          <div className="w-full h-full mx-auto flex flex-row justify-between gap-10">
             {/* Left */}
             <div className="bg-white p-8 flex justify-center flex-col rounded-xl shadow">
               

@@ -46,7 +46,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section className="py-24 w-full">
-      <div className="max-w-7xl mx-auto px-4 border h-87 border-amber-300">
+      <div className="max-w-7xl mx-auto px-4  h-87">
         
 
         {/* Swiper */}
@@ -69,12 +69,12 @@ export default function Testimonials() {
               <div className="group bg-white border h-70 border-gray-300 rounded-xl p-6 transition hover:border-indigo-600 hover:shadow-sm">
                 
                 {/* Rating */}
-                <div className="flex items-center mb-5 gap-2 text-amber-500">
+                <div className="flex items-center mb-5 gap-2">
                   ⭐ <span className="text-indigo-600 font-semibold">4.9</span>
                 </div>
 
                 {/* Text */}
-                <p className="text-gray-600 border border-amber-300 h-[45%] mb-6 group-hover:text-gray-800">
+                <p className="text-gray-600  h-[45%] mb-6 group-hover:text-gray-800">
                   {item.text}
                 </p>
 
