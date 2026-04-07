@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <section className="bg-white min-h-screen w-full flex flex-col">
       <div className="relative h-screen w-full flex items-center justify-center">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/17211446/pexels-photo-17211446.jpeg')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="flex flex-col justify-center items-center gap-5">
           <h1 className="relative z-10 text-6xl text-white font-bold">
@@ -122,21 +122,24 @@ const Home = () => {
               "https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"
             }
             name={"Asso Myron"}
-            job={"Gym Coach"}
+            job={"Strength Coach"}
+            imgPosition={"object-cover object-center h-full"}
           />
           <TrainerCard
             img={
-              "https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"
+              "https://images.unsplash.com/photo-1696564006617-1a85ba3a8f3e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             }
-            name={"Asso Myron"}
-            job={"Gym Coach"}
+            name={"George Dagerotip"}
+            job={"Fat Loss Coach"}
+            imgPosition={"object-contain object-center h-auto"}
           />
           <TrainerCard
             img={
-              "https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"
+              "https://images.unsplash.com/photo-1653587108842-58a9416a0ce9?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             }
-            name={"Asso Myron"}
-            job={"Gym Coach"}
+            name={"Ali choubin"}
+            job={"Personal Trainer"}
+            imgPosition={"object-cover object-center h-full object-top"}
           />
         </div>
       </div>
