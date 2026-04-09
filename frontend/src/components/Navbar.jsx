@@ -5,7 +5,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-5 rounded-4xl px-5 border w-2/3 z-50 border-gray-400 backdrop-blur-md bg-white/30 h-16 ">
+    <nav className="fixed top-5 rounded-full px-5 border w-full md:w-2/3 z-50 border-gray-400 backdrop-blur-md bg-white/30 h-18 ">
       <div className="max-w-7xl mx-auto px-4 w-full h-full flex items-center justify-between">
         {/* Logo */}
         <h1 className="text-lg font-bold">BeastMode Fitness</h1>
@@ -52,14 +52,14 @@ export default function Navbar() {
         </ul>
 
         {/* Buttons */}
-        <a href="https://wa.me/91xxxxxxxxxxx?text=I%20want%20to%20join%20your%20gym" target="_blank" className="flex px-4 gap-2 flex-row h-12 bg-[#25d366] text-black rounded-3xl justify-evenly items-center">
+        <a href="https://wa.me/91xxxxxxxxxxx?text=I%20want%20to%20join%20your%20gym" target="_blank" className="hidden lg:flex px-4 gap-2 flex-row h-12 bg-[#25d366] text-black rounded-3xl justify-evenly items-center">
           <img src={whatsappIcon} alt="" className="w-7" />
           <button className="py-1 flex flex-row">Join Now</button>
         </a>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden text-xl" onClick={() => setOpen(!open)}>
-          {open ? "✕" : "☰"}
+        <button className="md:hidden text-4xl" onClick={() => setOpen(!open)}>
+          {open ? "x" : "☰"}
         </button>
       </div>
 

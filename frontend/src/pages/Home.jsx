@@ -40,10 +40,10 @@ const Home = () => {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-black/50"></div>
         <div  className="flex flex-col justify-center items-center gap-5">
-          <h1  className="relative z-10 text-6xl text-white font-bold">
+          <h1  className="lg:center relative z-10 lg:text-6xl text-4xl text-white text-center font-bold">
           Transform Your Body, Transform Your Life.
         </h1>
-        <p id="featuresSection" className="relative z-10 text-2xl text-gray-300 font-medium">Discipline over motivation. Systems over excuses. Results over everything.</p>
+        <p id="featuresSection" className="relative z-10 lg:text-2xl text-lg px-5 text-gray-300 font-medium text-center">Discipline over motivation. Systems over excuses. Results over everything.</p>
         </div>
         <div  className="custom-shape-divider-bottom-1775038508">
           <svg
@@ -60,14 +60,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div  className="h-[50vh] w-full flex flex-col justify-center items-center">
+      <div  className="lg:h-[50vh] h-full mt-6 w-full flex flex-col justify-center items-center">
         <HeadingSection
           title={"Transform Your Body"}
           para={
             "Choose the right program based on your goals — strength, weight loss, or overall fitness."
           }
         />
-        <div  className="flex flex-row items-center justify-center h-[70%] w-full gap-20">
+        <div  className="flex flex-col lg:flex-row items-center justify-center lg:h-[70%] h-auto w-full lg:gap-20 gap-5">
           {/* <FeatureCard img={bodyBuilding} heading={"Weight Training"} />
           <FeatureCard img={personalTraining} heading={"Personal Training"} />
           <FeatureCard img={cardio} heading={"Cardio / HIIT"} />
@@ -79,14 +79,14 @@ const Home = () => {
           <span id="PricingSection"></span>
         </div>
       </div>
-      <div className="h-[70vh] w-full">
+      <div className="lg:h-[70vh] w-full">
         <HeadingSection
           title={"Flexible Membership Plans"}
           para={
             "Affordable pricing designed to fit your routine — no hidden charges."
           }
         />
-        <div className="flex flex-row items-center justify-center gap-15 w-full h-[70%]">
+        <div className="flex lg:flex-row flex-col items-center justify-center lg:gap-15 gap-5 w-full h-[70%]">
           <PricingCards
             price={"999"}
             planName={"Basic Plan"}
@@ -109,14 +109,14 @@ const Home = () => {
           {/* <PricingCards/> */}
         </div>
       </div>
-      <div  className="h-[70vh] bg-white text-black w-full ">
+      <div  className="lg:h-[70vh] h-auto bg-white text-black w-full ">
         <HeadingSection
           title={"Train With Experts"}
           para={
             "Certified trainers to guide, motivate, and push you towards real results."
           }
         />
-        <div className=" w-full h-[70%] flex items-center justify-center gap-15">
+        <div className=" w-full h-[70%] flex flex-col lg:flex-row items-center justify-center gap-15">
           <TrainerCard
             img={
               "https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg"
@@ -169,13 +169,11 @@ const Home = () => {
             "Convenient timings and easy location access for your daily workouts."
           }
         />
-        <section  className="py-20 w-[80%] h-150">
-          <div className="w-full h-full mx-auto flex flex-row justify-between gap-10">
+        <section  className="lg:py-20 w-[80%] lg:h-150 h-auto">
+          <div className="w-full h-full mx-auto flex lg:flex-row flex-col justify-between gap-10">
             {/* Left */}
             <div className="bg-white p-8 flex justify-center flex-col rounded-xl shadow">
-              
-
-              <div className="mt-6 space-y-2">
+              <div className="lg:mt-6 space-y-2">
                 <p>Mon - Sat: 5:00 AM – 10:00 PM</p>
                 <p>Sunday: 6:00 AM – 2:00 PM</p>
               </div>
