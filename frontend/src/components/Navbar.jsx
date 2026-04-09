@@ -65,18 +65,36 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="mt-4 flex flex-col gap-3 md:hidden">
-          <span>Pages</span>
-          <span>Account</span>
-          <span>Blocks</span>
-          <span>Docs</span>
+        <div className="mt-4 flex flex-col gap-4 md:hidden bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-gray-300">
+          <a href="#HomePage" onClick={() => setOpen(false)}>
+            <span className="cursor-pointer hover:text-blue-500">Home</span>
+          </a>
+          <a href="#featuresSection" onClick={() => setOpen(false)}>
+            <span className="cursor-pointer hover:text-blue-500">Features</span>
+          </a>
+          <a href="#PricingSection" onClick={() => setOpen(false)}>
+            <span className="cursor-pointer hover:text-blue-500">Pricing</span>
+          </a>
+          <a href="#LocationSection" onClick={() => setOpen(false)}>
+            <span className="cursor-pointer hover:text-blue-500">Location</span>
+          </a>
+          <a href="#TrainerSection" onClick={() => setOpen(false)}>
+            <span className="cursor-pointer hover:text-blue-500">Trainers</span>
+          </a>
+          <a href="#gallery" onClick={() => setOpen(false)}>
+            <span className="cursor-pointer hover:text-blue-500">Gallery</span>
+          </a>
+          <a href="#testimonialsSection" onClick={() => setOpen(false)}>
+            <span className="cursor-pointer hover:text-blue-500">Testimonials</span>
+          </a>
 
-          <div className="flex gap-2 mt-2">
-            <button className="w-full bg-blue-500 text-white py-1 rounded">
-              Get Started
-            </button>
-            <button className="w-full border py-1 rounded">Log In</button>
-          </div>
+          <a
+            href="https://wa.me/91xxxxxxxxxxx?text=I%20want%20to%20join%20your%20gym"
+            target="_blank"
+            className="mt-2 flex px-4 gap-2 flex-row h-12 bg-[#25d366] text-black rounded-3xl justify-center items-center"
+          >
+            Join Now
+          </a>
         </div>
       )}
     </nav>
