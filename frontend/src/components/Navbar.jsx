@@ -1,4 +1,5 @@
 import { useState } from "react";
+import whatsappIcon from "../assets/whatsappIcon.svg";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -29,7 +30,7 @@ export default function Navbar() {
           <li className="relative group">
             <span className="cursor-pointer">More ▾</span>
 
-            <ul className="absolute left-0 top-8 opacity-0 group-hover:opacity-100 transition shadow-lg rounded-3xl p-2 w-40 backdrop-blur-md bg-white/30">
+            <ul className="absolute left-0 top-8  opacity-0 group-hover:opacity-100 transition shadow-lg rounded-3xl p-2 w-40 bg-white  border-gray-400">
               {/* <li className="p-2 hover:bg-gray-100">Trainers</li> */}
               <a href="#TrainerSection">
                 <li className="p-2 cursor-pointer hover:text-blue-500">
@@ -51,11 +52,10 @@ export default function Navbar() {
         </ul>
 
         {/* Buttons */}
-        <div className="hidden md:flex gap-2">
-          <button className="px-4 py-1 bg-blue-500 text-white rounded-3xl">
-            Get Started
-          </button>
-        </div>
+        <a href="https://wa.me/91xxxxxxxxxxx?text=I%20want%20to%20join%20your%20gym" target="_blank" className="flex px-4 gap-2 flex-row h-12 bg-[#25d366] text-black rounded-3xl justify-evenly items-center">
+          <img src={whatsappIcon} alt="" className="w-7" />
+          <button className="py-1 flex flex-row">Join Now</button>
+        </a>
 
         {/* Mobile Toggle */}
         <button className="md:hidden text-xl" onClick={() => setOpen(!open)}>
