@@ -8,7 +8,7 @@ import {
  
 export default function FeatureCardUpdated({img, title, para}) {
   return (
-    <Card className="mt-6 w-96 p-5">
+    <Card className="mt-6 w-full max-w-sm p-5">
       <CardBody>
         <img className="mb-4 h-12 w-12 text-gray-900" src={img} alt="" />
         {/* <svg

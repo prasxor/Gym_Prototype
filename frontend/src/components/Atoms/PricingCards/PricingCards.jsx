@@ -3,7 +3,7 @@ import FeatureItem from "../FeatureItem/FeatureItem";
 
 const PricingCards = ({ price, planName, features, styles }) => {
   return (
-    <div className="rounded-3xl w-100 h-100 shadow-lg p-1 border-2 text-gray-600 max-w-md">
+    <div className="rounded-3xl w-full max-w-sm h-100 shadow-lg p-1 border-2 text-gray-600">
       <div className="relative gap-3 flex flex-col items-center p-5 pt-10  h-full rounded-xl">
         <p className={`text-xl mb-3 text-center font-semibold text-white px-4 py-1 rounded-lg ${styles}`}>
           {planName}

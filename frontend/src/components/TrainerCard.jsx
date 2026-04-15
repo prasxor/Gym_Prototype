@@ -1,6 +1,6 @@
 export default function ProfileCard({ img, name, job,imgPosition }) {
   return (
-    <div className="w-96 h-120 rounded-3xl border overflow-hidden">
+    <div className="w-full max-w-sm h-120 rounded-3xl border overflow-hidden">
       <div floated={false} className="h-[80%] overflow-hidden">
         <img
           src={img}

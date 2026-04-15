@@ -52,7 +52,7 @@ export default function Navbar() {
         </ul>
 
         {/* Buttons */}
-        <a href="https://wa.me/91xxxxxxxxxxx?text=I%20want%20to%20join%20your%20gym" target="_blank" className="hidden lg:flex px-4 gap-2 flex-row h-12 bg-[#25d366] text-black rounded-3xl justify-evenly items-center">
+        <a href="https://wa.me/91xxxxxxxxxxx?text=I%20want%20to%20join%20your%20gym" target="_blank" className="hidden md:flex px-4 gap-2 flex-row h-12 bg-[#25d366] text-black rounded-3xl justify-evenly items-center">
           <img src={whatsappIcon} alt="" className="w-7" />
           <button className="py-1 flex flex-row">Join Now</button>
         </a>
